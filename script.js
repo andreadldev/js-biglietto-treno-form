@@ -10,7 +10,7 @@ btn.addEventListener("click", function() {
     else {
             if (age.value === "over18") {
                 const price = km.value * 0.21;
-                console.log("cliente over18");
+                console.log("cliente maggiorenne");
                 console.log(`Il prezzo è ${price.toFixed(2)}€`);
             }
 
