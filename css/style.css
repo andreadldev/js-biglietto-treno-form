@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.buy-ticket {
+    background-color: #b91450;
+    color: white;
+}
+
+.buy-ticket .content {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 0 10%;
+}
