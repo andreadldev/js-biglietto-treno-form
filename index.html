@@ -11,31 +11,43 @@
 </head>
 <body>
     <div class="container">
-        <div class="buy-ticket py-3 text-center">
+        <div class="layout border border-dark py-5 px-3 text-center my-5 w-100 rounded-5 d-flex flex-column">
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-            <div class="content">
-                <div class="d-flex justify-content-center py-4">
-                    <form>
+            <div class="inner mb-5">
+                <form class="d-flex justify-content-center mx-auto py-4 flex-wrap w-75">
+                    <div class="mx-">
                         <span class="d-block">Nome e Cognome</span>
                         <input type="text" id="name">
-                    </form>
-                    <form class="mx-5">
+                        
+                    </div>
+                    <div class="mx-4">
                         <span class="d-block">Chilometri da percorrere:</span>
                         <input class="w-100" type="number" min="1" max="500" id="km">
-                    </form>
-                    <form>
+                    </div>
+                    <div class="mx-4">
                         <span class="d-block">Fascia d'età</span>
-                        <select id="age" class="mx-3">
+                        <select id="age">
                             <option value="over18">Maggiorenne</option>
                             <option value="under18">Minorenne</option>
                             <option value="over65">Over 65</option>
                         </select>
-                    </form>
-                </div>
-    
-                <div class="buttons py-4">
-                    <button class="" type="button" id="btnTicket">Genera</button>
-                    <button type="reset">Annulla</button>
+                    </div>
+                    <div class="buttons w-100 py-4 d-block">
+                        <button type="button" id="btnTicket">Genera</button>
+                        <button type="reset">Annulla</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="toggle">
+                <h2>IL TUO BIGLIETTO</h2>
+                <div class="inner">
+                    <div class="p-4">
+                        <h5 class="text-start">DETTAGLIO PASSEGGERI</h5>
+                        <div class="details border border-secondary">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
