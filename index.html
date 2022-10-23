@@ -15,16 +15,15 @@
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             <div class="inner mb-5">
                 <form class="d-flex justify-content-center mx-auto py-4 flex-wrap w-75">
-                    <div class="mx-">
+                    <div>
                         <span class="d-block">Nome e Cognome</span>
                         <input type="text" id="name">
-                        
                     </div>
                     <div class="mx-4">
                         <span class="d-block">Chilometri da percorrere:</span>
                         <input class="w-100" type="number" min="1" max="500" id="km">
                     </div>
-                    <div class="mx-4">
+                    <div class="mx-2">
                         <span class="d-block">Fascia d'età</span>
                         <select id="age">
                             <option value="over18">Maggiorenne</option>
@@ -34,12 +33,12 @@
                     </div>
                     <div class="buttons w-100 py-4 d-block">
                         <button type="button" id="btnTicket">Genera</button>
-                        <button type="reset">Annulla</button>
+                        <button type="reset" id="reset">Annulla</button>
                     </div>
                 </form>
             </div>
 
-            <div id="toggle">
+            <div id="toggle" class="d-none">
                 <h2>IL TUO BIGLIETTO</h2>
                 <div class="inner text-start">
                     <div class="p-4">
@@ -47,7 +46,7 @@
                         <div class="details d-flex border-top border-bottom border-secondary flex-wrap">
                             <div class="col-sm-12 col-lg bg-secondary p-3">
                                 <h6><strong>NOME PASSEGGERO</strong></h6>
-                                <span><strong>ciao</strong></span>
+                                <span><strong></strong></span>
                             </div>
                             <div class="col-sm-12 col-lg p-3">
                                 <h6 class="pb-4">Offerta</h6>
@@ -55,15 +54,15 @@
                             </div>
                             <div class="col-sm-12 col-lg p-3">
                                 <h6 class="pb-4">Carrozza</h6>
-                                <span>Numero random 1 cifra</span>
+                                <span id="train">Numero random 1 cifra</span>
                             </div>
                             <div class="col-sm-12 col-lg p-3">
                                 <h6 class="pb-4">Codice CP</h6>
-                                <span>Numero random 5 cifre</span>
+                                <span id="CPcode">Numero random 5 cifre</span>
                             </div>
                             <div class="col-sm-12 col-lg p-3">
                                 <h6 class="pb-4">Costo biglietto</h6>
-                                <span>Biglietto standard</span>
+                                <span id="ticketPrice">Biglietto standard</span>
                             </div>
                         </div>
                     </div>
